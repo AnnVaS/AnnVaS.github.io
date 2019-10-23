@@ -112,13 +112,14 @@
 		</div>
 		<br />
 		<div id="input1">
-			<form name="form1" action="" method="post">
-				<label for="value1"><strong>Введите имя:</strong></label><br />
-					<input type="text" id="value1" placeholder="Имя..." maxlength="20 ">
-					<br /><br />
-				<label for="value2"><strong>Введите номер телефона:</strong></label> <br />
-					<input type="tel" id="value2" placeholder="7(900)000-00-00" pattern="+7(9[0-9]{2})[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="16">
-			</form>
-		</div>	
+      		<form name="form1" action="" method="post">
+        		<label for="value1"><strong>Введите имя:</strong></label><br />
+         		 	<input type="text" id="value1" placeholder="Имя..." required="true" pattern="^[А-Яа-яЁё]+$" maxlength="20">
+         		 <br /><br />
+        		<label for="value2"><strong>Введите номер телефона:</strong></label> <br />
+          			<input id="value2" required="true" placeholder="+7(900)000-00-00" pattern="\+7\(9\d{2}\)\d{3}-\d{2}-\d{2}" maxlength="16">
+          		<p><input type="submit" value="Подтвердить"></p>
+      		</form>
+    	</div>
 	</body>
 </html>
